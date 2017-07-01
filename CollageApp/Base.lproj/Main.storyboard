@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="umM-QS-B9a">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fjt-km-n5q">
+            <objects>
+                <navigationController toolbarHidden="NO" id="umM-QS-B9a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a5P-jg-UsG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="3i0-NZ-VaT">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="uwj-pC-UJd" kind="relationship" relationship="rootViewController" id="zUp-Qc-d57"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDc-WF-D80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="265"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="92P-yG-fpW">
+            <objects>
+                <viewController id="uwj-pC-UJd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gyF-e5-IeT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ni2-On-AgC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8wJ-mg-LSd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem tag="100" image="document.png" id="Ko2-9x-L3x">
+                            <connections>
+                                <action selector="action:" destination="uwj-pC-UJd" id="RFw-kb-jzo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="b5Y-zy-wmm"/>
+                        <barButtonItem tag="101" image="image1.png" id="8ei-Ni-qBS">
+                            <connections>
+                                <action selector="action:" destination="uwj-pC-UJd" id="y0s-M9-pOc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="SEL-46-Fxk"/>
+                        <barButtonItem tag="102" image="image2.png" id="KFe-aq-Lxa">
+                            <connections>
+                                <action selector="action:" destination="uwj-pC-UJd" id="CWE-ao-443"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="qJC-Ex-6QC"/>
+                        <barButtonItem tag="103" image="selection_rectangular.png" id="krp-jZ-6jy">
+                            <connections>
+                                <action selector="action:" destination="uwj-pC-UJd" id="e0A-Lv-rxd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="pkQ-PK-RrF"/>
+                        <barButtonItem tag="104" image="diskette.png" id="XXa-ID-ayI">
+                            <connections>
+                                <action selector="action:" destination="uwj-pC-UJd" id="Tcd-ME-yPd"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="q2e-YS-42m"/>
+                    <connections>
+                        <segue destination="6tY-xB-axG" kind="show" identifier="EditImage1" id="FIK-u4-wMC"/>
+                        <segue destination="EZU-vV-2aq" kind="show" identifier="EditImage2" id="F7z-QC-lXG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7g-ce-pmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="265"/>
+        </scene>
+        <!--Edit Image View Controller-->
+        <scene sceneID="ox1-C1-UTg">
+            <objects>
+                <viewController id="6tY-xB-axG" customClass="EditImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2EV-f9-ZSo"/>
+                        <viewControllerLayoutGuide type="bottom" id="zzY-d0-hA1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rgi-d0-2Pl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem tag="100" image="camera.png" id="AIV-b2-322">
+                            <connections>
+                                <action selector="action:" destination="6tY-xB-axG" id="deZ-zo-zvk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="PR3-zz-Ya0"/>
+                        <barButtonItem tag="101" image="file.png" id="8JH-m7-mLa">
+                            <connections>
+                                <action selector="action:" destination="6tY-xB-axG" id="OQn-fG-Jjs"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbs-zJ-QbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="265"/>
+        </scene>
+        <!--Edit Image2 View Controller-->
+        <scene sceneID="4w5-ol-yJe">
+            <objects>
+                <viewController id="EZU-vV-2aq" customClass="EditImage2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="90C-BK-EKA"/>
+                        <viewControllerLayoutGuide type="bottom" id="WjR-bw-HKC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="prl-MB-FRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem tag="100" image="camera.png" id="2Qw-0b-xTF">
+                            <connections>
+                                <action selector="action:" destination="EZU-vV-2aq" id="82U-DM-so2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ZhQ-Kk-gxQ"/>
+                        <barButtonItem tag="101" image="file.png" id="Y23-RW-Sva">
+                            <connections>
+                                <action selector="action:" destination="EZU-vV-2aq" id="NTd-Lx-QXD"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tA-Nh-Dwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="1016"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.png" width="36" height="36"/>
+        <image name="diskette.png" width="36" height="36"/>
+        <image name="document.png" width="36" height="36"/>
+        <image name="file.png" width="36" height="36"/>
+        <image name="image1.png" width="36" height="36"/>
+        <image name="image2.png" width="36" height="36"/>
+        <image name="selection_rectangular.png" width="30" height="30"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>
